@@ -334,7 +334,7 @@ main {
     pointer-events: all;
 }
 
-#email {
+#nowrap {
     word-break: break-all;
 }
 
