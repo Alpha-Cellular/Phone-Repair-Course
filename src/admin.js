@@ -38,7 +38,7 @@ function isValidPassword(password) {
 signUpForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  const email = document.getElementById("signUpEmail").value.trim();
+  const email = document.getElementById("signUpEmail").value.trim().toLowerCase();
   const password = document.getElementById("signUpPassword").value.trim();
   const button = document.getElementById("signUpButton");
 
