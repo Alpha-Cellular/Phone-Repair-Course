@@ -1,0 +1,132 @@
+main {
+  min-height: 100vh;
+  background: url('../images/admin_bg.jpg') center / cover no-repeat fixed;
+}
+
+#form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--SPACING-MEDIUM);
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  background: linear-gradient(dodgerblue, cornflowerblue, lightblue);
+  border-radius: 3em;
+  padding: var(--SPACING-LARGE);
+  box-shadow: 0 0 0.25em 0.25em darkblue;
+}
+
+#signUpForm {
+  display: none;
+}
+
+form img {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: auto;
+  border-radius: 25%;
+}
+
+form h1 {
+  margin: var(--SPACING-SMALLER);
+  font-size: var(--FS-LARGE);
+  color: purple;
+}
+
+p.instruction {
+  font-size: var(--FS-SMALL);
+}
+
+form label {
+  display: block;
+  font-size: var(--FS-MEDIUM);
+  margin-top: var(--SPACING-SMALL);
+}
+
+form input {
+  width: 100%;
+  max-width: 400px;
+  padding: var(--SPACING-SMALLER);
+  border-radius: 0.5em;
+}
+
+button {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: var(--SPACING-LARGE) auto var(--SPACING-SMALL);
+  padding: var(--SPACING-SMALLER);
+  border-radius: 2em;
+  background-color: var(--CELLULAR);
+  color: purple;
+  cursor: pointer;
+  font-size: var(--FS-SMALL);
+  transition:  all 0.5s ease;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button:is(:hover, :focus) {
+  background-color: plum;
+  color: blueviolet;
+}
+
+button:active {
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
+}
+
+p.option {
+  margin: var(--SPACING-SMALLER);
+}
+
+span {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+span:hover {
+  color: purple;
+}
+
+span:active {
+  -webkit-filter: brightness(1.3);
+          filter: brightness(1.3);
+}
+
+
+@media only screen and (min-width: 768px) {
+  form {
+    flex-direction: row;
+    align-items: center;
+    -moz-column-gap: var(--SPACING-SMALL);
+        column-gap: var(--SPACING-SMALL);
+  }
+
+  .form-text {
+    width: 40%;
+  }
+
+  form img {
+    width: 50%;
+  }
+
+  .form-inputs {
+    width: 60%;
+  }
+}

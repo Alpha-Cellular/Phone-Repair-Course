@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Character Encoding (Ensure proper text rendering) -->
+
+    <!-- Favicon (Ensure both formats for maximum compatibility and visual quality) -->
+    <!-- Favicon in .ico format for older browsers like Internet Explorer -->
+    <link rel="icon" href="images/favicon--ico.ico" type="image/x-icon">
+
+    <!-- Favicon in .png format for modern browsers with transparency support -->
+    <link rel="icon" href="images/favicon--png.png" type="image/png">
+
+    <!-- Viewport Meta Tag (For responsive design on mobile devices) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title Tag (Displayed in the browser tab and used for SEO) -->
+    <title>Phone Repair Course | Alpha Cellular</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Welcome to the Alpha Cellular Phone Repair Course. Learn more about us and book your spot today!">
+    <meta name="keywords"
+        content="Alpha Cellular, phone repair Durban, mobile repair services, phone repair training, mobile courses, phone technicians, device troubleshooting, mobile repair workshops">
+    <meta name="author" content="Alpha Cellular - William Daniel Maistry">
+
+    <!-- Robots Meta Tag (Tells search engines to index and follow links) -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags (For social media sharing like Facebook, LinkedIn, etc.) -->
+    <meta property="og:title"
+        content="Phone Repair Course | Alpha Cellular">
+    <meta property="og:type" content="website">
+    <!-- TODO: Add actual url -->
+    <meta property="og:url" content="https://alpha-cellular.github.io/Phone-Repair-Course/">
+    <meta property="og:image" content="https://github.com/Alpha-Cellular/Phone-Repair-Course/blob/main/images/meta.png?raw=true">
+    <meta property="og:description"
+        content="Welcome to the Alpha Cellular Phone Repair Course. Learn more about us and book your spot today!">
+    <meta property="og:site_name" content="Alpha Cellular Phone Repair Course">
+    <meta property="og:locale" content="en_ZA">
+
+    <!-- Twitter Meta Tags (For Twitter card display) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+        content="Phone Repair Course | Alpha Cellular">
+    <meta name="twitter:description"
+        content="Welcome to the Alpha Cellular Phone Repair Course. Learn more about us and book your spot today!">
+    <meta name="twitter:image" content="https://github.com/Alpha-Cellular/Phone-Repair-Course/blob/main/images/meta.png?raw=true">
+
+    <!-- Links to external CSS stylesheets -->
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <!-- Links to external JS files -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("NVunTN1h6QLNytBqS");
+      })();
+    </script>
+    <script src="src/main.js" type="module"></script>
+
+    <!-- Font Awesome (For adding icons) -->
+    <link rel="stylesheet" href="fontAwesome/css/all.css">
+  </head>
+
+  <body>
+    <header>
+      <a href="#" id="headerLogo">
+        <img src="images/icon.png" alt="Business Icon" width="50">
+        <p><span class="alpha">Alpha</span><span class="cellular">Cellular</span></p>
+      </a>
+      <div id="header-tabs" hidden>
+        <a href="#information">About</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#signingUp">Sign Up</a>
+      </div>
+    </header>
+
+    
+    <main>
+      <section id="hero">
+        <div id="hero-content">
+          <div id="logo-container">
+            <img src="images/logo.png" alt="Logo" width="300">
+          </div>
+          <div id="hero-elements">
+            <h1 class="center">Welcome to the <span class="nowrap"><span class="alpha">Alpha</span><span class="cellular">Cellular</span></span> phone repair course!!!</h1>
+            <a href="#about">Get Started</a>
+            <a href="terms.html" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
+            <a href="#signingUp">Sign Up</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="information" class="target-link">
+
+        <div id="about" class="target-link info-category">
+          <div class="info-category__text">
+            <h2 class="center">Company Description</h2>
+            <p>Alpha Cellular, situated on 
+              <a href="https://maps.app.goo.gl/mJTSsfT51WY4et9p7" target="_blank" rel="noopener noreferrer" title="View on Google Maps">Cowey Rd, Essenwood, Durban,</a> 
+              is an accredited in-warranty Nokia Mobile Care and Microsoft Device Care Repair Center 
+              specializing in mobile smartphone, tablet, and laptop repairs.
+            </p>
+            <p>
+              We also specialize in out-of-warranty repairs to all other makes and models of 
+              handsets and tablets, viz., Apple, Samsung, Huawei, Honor, Hisense, Oppo, 
+              Vivo, Xiaomi, Redmi, Sony Xperia, LG, Mobicel, Mecer, Lenovo, Sansui, 
+              Telefunken, Alcatel, Macbooks etc.
+            </p>
+            <p>
+              Established in 2002, Alpha Cellular has since been servicing end-user clients, 
+              corporates, franchise stores (Vodacom, MTN, Cell C, Virgin Mobile, Telkom, 
+              Nashua, Autopage, Edgars, Truworths, Foschini, Woolworths, Markhams, JET, 
+              CNA, Total Sports, Sports Scene, etc.), as well as independently owned cellular 
+              stores in the KZN region.
+            </p>
+          </div>
+          <img src="images/logo.png" alt="" width="200">
+        </div>
+
+        <div class="info-category">
+          <img src="images/objective.jpg" alt="" width="200">
+          <div class="info-category__text">
+            <h2 class="center">Course Objective</h2>
+            <p>Due to the high unemployment rates worldwide and the need for skills 
+              development, our smartphone repair course aims to provide a work readiness, guided hands-on training and 
+              certification to individuals seeking a career in smartphone/tablet repairs. We
+              empower prospective individuals with the necessary skills to troubleshoot and 
+              successfully repair common faults on the following makes of devices: Apple, 
+              Samsung, Nokia, Huawei, Honor, Redmi, Xiaomi, OPPO, Vivo, Hisense, 
+              Mobicel, etc., thereby enabling them to be self-sustaining.
+            </p>
+            <p>With the increasing demand for skilled technicians, our course will equip 
+              students with the necessary skills and knowledge to succeed in this rapidly 
+              growing industry. 
+            </p>
+          </div>
+        </div>
+
+        <div class="info-category">
+          <div class="info-category__text">
+            <h2 class="center">Qualifying Criteria</h2>
+            <ul>
+              <li>16 years and above</li>
+              <li>English literate</li>
+              <li>Well-sighted</li>
+              <li>Steady-handed</li>
+              <li>Basic PC skills</li>
+            </ul>
+            <p><strong>(Subject to successful completion of an aptitude test)</strong></p>
+          </div>
+          <img src="images/criteria.jpg" alt="" width="200">
+        </div>
+
+        <div class="info-category">
+          <img src="images/skills.jpg" alt="" width="200">
+          <div class="info-category__text">
+            <h2 class="center">What does the course cover?</h2>
+            <p>Our smartphone/tablet repair course teaches you the following skills and techniques.</p>
+            <ul>
+              <li>Level 1 and 2 repairs: removing and replacing malfunctioning mechanical and
+              electrical parts (desoldering and soldering).</li>
+              <li>Identification of smartphones and tablets.</li>
+              <li>Identification and usage of tools, equipment, and spare parts.</li>
+              <li>Disassemble smartphones and tablets.</li>
+              <li>Troubleshooting and fault finding (hardware/software), identification of liquid
+              damage.</li>
+              <li>Liquid damage repair techniques.</li>
+              <li>Software fundamentals.</li>
+              <li>Assemble smartphones and tablets.</li>
+              <li>Purchasing/supply of high-quality spare parts.</li>
+              <li>Quality Control.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="info-category">
+          <div class="info-category__text">
+            <h2 class="center">Course Duration</h2>
+            <p class="center">3 weeks (Monday to Friday)</p>
+            <h2 class="center">Course Fee</h2>
+            <p class="center"><span class="strike nowrap">R10 550</span>: <span class="nowrap">Now R9 495</span> <span class="nowrap"><strong>(10% Discount)</strong></span></p>
+          </div>
+          <img src="images/duration.jpg" alt="" width="200">
+        </div>
+
+        <div class="info-category">
+          <img src="images/opportunities.jpg" alt="" width="200">
+          <div class="info-category__text">
+            <h2 class="center">Career Opportunities</h2>
+            <ul>
+              <li>Self-employed (start up a business with a minimal capital outlay, preferably in 
+              the rural areas).</li>
+              <li>Seek employment at an existing cellular outlet.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="info-category">
+          <div class="info-category__text">
+            <h2 class="center">Return on investment</h2>
+            <p class="center">Typical repair examples of common screen replacements:</p>
+            <p>iPhone X screen replacement retail price: approx. R650.00 less the cost of the 
+            new replacement screen module R350.00 = R300.00 profit.</p>
+            <p>Samsung A04 screen replacement retail price: approx. R450.00 less the cost of 
+            the new replacement screen module R200.00 = R250.00 profit.</p>
+            <p>Approx. 3 to 4 successful repairs daily = approx. R1000 profit.</p>
+          </div>
+          <img src="images/return.jpg" alt="" width="200">
+        </div>
+
+        <div class="info-category__text">
+          <h2 class="center">Evaluation</h2>
+          <p class="evaluation">A theory and practical assessment will be conducted after the training course to 
+          ensure that the individual is capable of successfully repairing a smartphone and 
+          tablet. Thereafter, all students will receive a certificate of completion upon successful completion of the course.</p>
+        </div>
+      </section>
+
+
+
+      <section id="faqs" class="target-link">
+        <h2 class="center">Frequently Asked Questions (FAQs)</h2>
+        <div id="faqs-content">Loading FAQs...</div>
+      </section>
+
+
+      <h1 id="signingUp" class="center target-link">Durban Phone Repair Course</h1>
+      <p class="course-info location">
+        <a href="https://maps.app.goo.gl/mJTSsfT51WY4et9p7" target="_blank" rel="noopener noreferrer" title="View on Google Maps">
+          <i class="fas fa-location-dot"></i>
+          118 Problem Mkhize Rd, Essenwood, Berea, 4001
+        </a>
+      </p>
+      <p class="course-info">Aptitude Test: Open from 26 January, 2026 - 13 February, 2026</p>
+      <p class="course-info">Course: 23 February, 2026 - 13 March, 2026</p>
+      <form id="registrationForm">
+        <h2 class="center">Registration Form</h2>
+        <label for="firstname" class="required">First Name/s</label>
+        <input type="text" id="firstname" placeholder="John" required aria-required="true">
+        <label for="surname" class="required">Surname</label>
+        <input type="text" id="surname" placeholder="Doe" required aria-required="true">
+        <label for="email" class="required">Email</label>
+        <input type="email" id="email" placeholder="email@address.com" required aria-required="true">
+        <label for="phone" class="required">Phone</label>
+        <input type="tel" id="phone" placeholder="0123456789" required aria-required="true">
+        <h3 class="required">Preferred method of contact</h3>
+        <label>
+          <input type="checkbox" name="contactMethod" value="email">
+          Email
+        </label>
+        <label>
+          <input type="checkbox" name="contactMethod" value="whatsapp">
+          WhatsApp
+        </label>
+        <h3 class="required">Gender</h3>
+        <label>
+          <input type="radio" name="gender" value="male" required aria-required="true">
+          Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female">
+          Female
+        </label>
+        <label for="region" class="required">Which Durban <em>area</em> or <em>region</em> are you located in?</label>
+        <input type="text" id="region" placeholder="e.g. Umhlanga, Morningside, Berea" required aria-required="true">
+        <h3 class="required">
+          Do you have any basic PC experience?
+          <small>(i.e., able to type, send emails, browse the internet, and save files)</small>
+        </h3>
+        <label>
+          <input type="radio" name="pc_experience" value="yes" required aria-required="true">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="pc_experience" value="no">
+          No
+        </label>
+        <h3 class="required">Do you have any past experience in the cellular or repair industry?</h3>
+        <label>
+          <input type="radio" name="repair_experience" value="yes" required aria-required="true">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="repair_experience" value="no">
+          No
+        </label>
+        <h3 class="required">Do you have any <em>medical conditions</em> that may affect your ability to safely participate in this course?</h3>
+        <label>
+          <input type="radio" name="medical_condition" value="yes" required aria-required="true">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="medical_condition" value="no">
+          No
+        </label>
+        <div id="medical_condition_details_container" hidden>
+          <h4 class="required">Please provide details about your condition.</h4>
+          <textarea
+          name="medical_condition_details"
+          id="medical_condition_details"
+          placeholder="e.g., epilepsy, dizziness - please provide details"></textarea>
+        </div>
+        <h3 class="required">Are you <em>color blind?</em></h3>
+        <label>
+          <input type="radio" name="colorBlind" value="yes" required aria-required="true">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="colorBlind" value="no">
+          No
+        </label>
+        <h3 class="required">Do you wear any <em>eyewear?</em></h3>
+        <label>
+          <input type="radio" name="eyewear" value="yes" required aria-required="true">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="eyewear" value="no">
+          No
+        </label>
+        <div id="eyewear_type" hidden>
+          <h3 class="required">Which type of eyewear do you usually wear?</h3>
+          <label>
+            <input type="radio" name="eyewear_type" value="contact_lenses">
+            Contact lenses
+          </label>
+          <label>
+            <input type="radio" name="eyewear_type" value="spectacles">
+            Spectacles / Glasses
+          </label>
+          <label>
+            <input type="radio" name="eyewear_type" value="both">
+            Both
+          </label>
+        </div>
+        <h3 class="required">Please enter the numbers you see in each image into its matching input field.</h3>
+        <div id="eyeTestContainer">
+          <div class="eye_test">
+            <img src="images/eye_test_1.jpg" alt="eye_test_1" width="400">
+            <input type="text" id="eye_test_1" required aria-required="true" placeholder="Enter numbers here">
+          </div>
+          <div class="eye_test">
+            <img src="images/eye_test_2.jpg" alt="eye_test_2" width="400">
+            <input type="text" id="eye_test_2" required aria-required="true" placeholder="Enter numbers here">
+          </div>
+          <div class="eye_test">
+            <img src="images/eye_test_3.jpg" alt="eye_test_3" width="400">
+            <input type="text" id="eye_test_3" required aria-required="true" placeholder="Enter numbers here">
+          </div>
+          <div class="eye_test">
+            <img src="images/eye_test_4.jpg" alt="eye_test_4" width="400">
+            <input type="text" id="eye_test_4" required aria-required="true" placeholder="Enter numbers here">
+          </div>
+          <div class="eye_test">
+            <img src="images/eye_test_5.jpg" alt="eye_test_5" width="400">
+            <input type="text" id="eye_test_5" required aria-required="true" placeholder="Enter numbers here">
+          </div>
+        </div>
+        <h3 class="required">Do you have your own means of transport?</h3>
+        <label>
+          <input type="radio" name="transport" value="yes" required aria-required="true">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="transport" value="no">
+          No
+        </label>
+        <h3 class="required">Which days and times would generally suit you best to take the <em>Aptitude Test?</em> <small>(Monday - Friday ONLY)</small></h3>
+        <textarea name="availability" id="availability" required aria-required="true" placeholder="Please list all available days and times, e.g. Monday: 9a.m. - 1p.m., Tuesday: 2p.m. - 4p.m."></textarea>
+        <h3>Would you like to add a message?</h3>
+        <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
+        <label id="termsLabel">
+          <input type="checkbox" required aria-required="true">
+          <p>
+            I confirm that I have read, understood, and agree to the
+            <a href="terms.html" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
+            of the Alpha Cellular Phone Repair Course.
+          </p>
+        </label>
+
+        <button type="submit" id="signUp">Sign Up</button>
+      </form>
+
+
+      <a id="contact" href="https://wa.me/27691445214" target="_blank" rel="noopener noreferrer" title="Hi there, I'm William!👋🏼 Please feel free to reach out to me at any time.😊">
+        <img src="images/whatsapp.png" alt="WhatsApp" width="50">
+      </a>
+
+      <a href="#" id="top" title="Back to top">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 All Rights Reserved | Alpha Cellular</p>
+    </footer>
+  </body>
+</html>

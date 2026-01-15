@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Character Encoding (Ensure proper text rendering) -->
+
+    <!-- Favicon (Ensure both formats for maximum compatibility and visual quality) -->
+    <!-- Favicon in .ico format for older browsers like Internet Explorer -->
+    <link rel="icon" href="images/favicon--ico.ico" type="image/x-icon">
+
+    <!-- Favicon in .png format for modern browsers with transparency support -->
+    <link rel="icon" href="images/favicon--png.png" type="image/png">
+
+    <!-- Viewport Meta Tag (For responsive design on mobile devices) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title Tag (Displayed in the browser tab and used for SEO) -->
+    <title>Dashboard | Alpha Cellular</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Access the Alpha Cellular Course Admin Dashboard to manage course applications, view student details, and monitor enrollment. Admin access only.">
+    <meta name="author" content="Alpha Cellular - William Daniel Maistry">
+
+    <!-- Robots Meta Tag (Tells search engines to index and follow links) -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Open Graph Meta Tags (For social media sharing like Facebook, LinkedIn, etc.) -->
+    <meta property="og:title"
+        content="Dashboard | Alpha Cellular">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpha-cellular.github.io/Phone-Repair-Course/dashboard.html">
+    <meta property="og:image" content="https://github.com/Alpha-Cellular/Phone-Repair-Course/blob/main/images/meta.png?raw=true">
+    <meta property="og:description"
+        content="Access the Alpha Cellular Course Admin Dashboard to manage course applications, view student details, and monitor enrollment. Admin access only.">
+    <meta property="og:site_name" content="Dashboard - Alpha Cellular Course">
+    <meta property="og:locale" content="en_ZA">
+
+    <!-- Twitter Meta Tags (For Twitter card display) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"
+        content="Dashboard | Alpha Cellular">
+    <meta name="twitter:description"
+        content="Access the Alpha Cellular Course Admin Dashboard to manage course applications, view student details, and monitor enrollment. Admin access only.">
+    <meta name="twitter:image" content="https://github.com/Alpha-Cellular/Phone-Repair-Course/blob/main/images/meta.png?raw=true">
+
+    <!-- Links to external CSS stylesheets -->
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+
+    <!-- Links to external JS files -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="src/dashboard.js" type="module"></script>
+  </head>
+  
+  <body>
+    <main>
+      <img id="logo" src="images/logo.png" alt="Alpha Cellular Logo" width="200">
+      <h1 class="center">Durban Phone Repair Course Applications</h1>
+      <div id="table-container">
+        <table id="applications">
+          <tbody>
+            <tr>
+              <td>Loading Applications...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <button type="button" id="logoutButton">Log Out</button>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+/* ================= Terms & Conditions ====================== */
+
+#terms {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: silver url('../images/terms.jpg') center / cover no-repeat fixed;    
+}
+
+#terms-container {
+    background: rgba(127, 127, 127, 0.85);
+    min-height: 100vh;
+    padding: var(--SPACING-MEDIUM);
+}
+
+#terms img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 25%;
+}
+
+#terms h1 {
+    margin: var(--SPACING-SMALL) 0 var(--SPACING-MEDIUM);
+}
+
+#terms p#terms-hero {
+    font-size: var(--FS-SMALL);
+    max-width: 500px;
+    margin: 0 auto var(--SPACING-LARGE);
+    background: rgb(128, 0, 128, 0.6);
+    padding: var(--SPACING-SMALL);
+    border-radius: 2em;
+}
+
+#terms h2 {
+    margin: var(--SPACING-MEDIUM) 0 var(--SPACING-SMALLER);
+}
+
+#terms p {
+    margin: var(--SPACING-SMALL) 0;
+    text-indent: var(--SPACING-MEDIUM);
+}
+
+#terms p a{
+    color: darkblue;
+    font-style: italic;
+}
