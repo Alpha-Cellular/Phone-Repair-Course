@@ -407,13 +407,12 @@ label.required {
 }
 
 label:not([class="required"]) {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     -moz-column-gap: var(--SPACING-SMALLER);
         column-gap: var(--SPACING-SMALLER);
     margin-top: var(--SPACING-SMALL);
     cursor: pointer;
-    
 }
 
 .required::before {
