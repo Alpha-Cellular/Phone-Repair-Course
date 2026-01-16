@@ -82,7 +82,7 @@ export const faqs = [
 
       <a class="contact" href="mailto:alphacellularinfo@gmail.com" target="_blank" rel="noopener noreferrer">
         <img src="images/email.png" alt="Email" width="50">
-        <span id="nowrap">alphacellularinfo@gmail.com</span>
+        <span id="wrap">alphacellularinfo@gmail.com</span>
       </a>
     `
   }
