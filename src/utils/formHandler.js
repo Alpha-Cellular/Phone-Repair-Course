@@ -32,6 +32,16 @@ export async function formHandler() {
 
   setInterval(updateRegistrationCount, 5000);
 
+  
+  // --- Age input handler
+  const ageInput = document.getElementById("age");
+
+  ageInput.addEventListener('input', () => {
+    ageInput.value = ageInput.value
+      .replace(/\D/g, "")
+      .slice(0, 2)
+  })
+
 
   // --- Medical condition handler
   const medicalRadios = document.querySelectorAll('input[name="medical_condition"]');
@@ -78,6 +88,14 @@ export async function formHandler() {
   // --- Form submit handler
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    // --- Age
+    const age = parseInt(document.getElementById("age").value);
+
+    if (age < 16) {
+      alert("Sorry, you must be 16 or older to qualify.")
+      return;
+    }
 
     // --- Preferred contact method
     const contactMethods = [...document.querySelectorAll('input[name="contactMethod"]:checked')];
@@ -155,6 +173,7 @@ export async function formHandler() {
 
       preferred_contact_method: contactMethods.map(c => c.value).join(", "),
 
+      age: document.getElementById("age").value,
       gender: document.querySelector('input[name="gender"]:checked').value,
       region: document.getElementById("region").value.trim(),
 
