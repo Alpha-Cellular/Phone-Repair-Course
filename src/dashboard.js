@@ -57,6 +57,7 @@ async function loadApplications() {
       <th>Phone</th>
       <th>Preferred Contact Method</th>
       <th>Gender</th>
+      <th>Age</th>
       <th>Region</th>
       <th>PC Experience</th>
       <th>Repair Experience</th>
@@ -93,6 +94,7 @@ async function loadApplications() {
         <td>${app.phone}</td>
         <td>${app.preferred_contact_method}</td>
         <td>${app.gender}</td>
+        <td>${app.age}</td>
         <td>${app.region}</td>
         <td>${app.pc_experience}</td>
         <td>${app.repair_experience}</td>
