@@ -215,6 +215,8 @@ export async function formHandler() {
     if (error) {
       console.error(error);
       alert("Something went wrong. Please check your internet connection and try again.");
+      signUpButton.innerHTML = "Sign Up";
+      signUpButton.disabled = false;
       return;
     } else {
       emailjs.send("service_c0rsz8d", "template_4h8zaoz", {
